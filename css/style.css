@@ -218,10 +218,116 @@ span.header-logo {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.is-hidden {
+.modal-icons:hover,
+.modal-icons:focus {
+  fill: #000000;
+  background-color: var(--accent-color);
+}
+.modal-backdrop {
+  padding: 40px 40px 30px 40px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.modal-input {
+  padding-left: 15px;
+
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-input-group {
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.modal-input-group label {
+  margin-bottom: 4px;
+  display: block;
+}
+.modal-text {
+  padding: 12px 16px;
+  width: 448px;
+  height: 120px;
+  left: 576px;
+  top: 519px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: vertical;
+  max-height: 200px;
+}
+.btn-model-senden {
+  padding: 10px 52px;
+  margin-top: 74px;
+  margin-left: 164px;
+  margin-right: 164px;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: #188ce8;
+  border: transparent;
+}
+.btn-model-senden:hover,
+.btn-model-senden:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.modal-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 1;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-input:required {
+  border-color: tomato;
+}
+.modal-input :valid {
+}
+.modal-inpu .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-input-icons {
+  position: absolute;
+  fill: #212121;
+}
+label.modal-politic-label {
+  display: flex;
+}
+.modal-politic-label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #303030;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.modal-politic-check:checked + label::before {
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url("../imge/check.svg");
+  background-position: center;
 }
 /* --------Main-hero-------- */
 .hero {
@@ -550,7 +656,7 @@ span.footer-logo {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  fill: #ffffff;
+  fill: var(--second-header-color);
 }
 .teams-soc-link:hover {
   background-color: var(--accent-color);
@@ -562,8 +668,79 @@ span.footer-logo {
 .title-items {
   margin-bottom: 0;
   margin-top: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 1;
+  letter-spacing: 0.03em;
+
   color: var(--pimary-link-color);
 }
+.footer-input-group {
+  margin-left: 93px;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2784px;
+
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--second-header-color);
+}
+.footer-btn {
+  display: inline;
+  margin-left: 12px;
+}
+.footer-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 8;
+  padding: 10px 62px 10px 28px;
+  letter-spacing: 0.06em;
+
+  color: var(--pimary-link-color);
+  background: #2196f3;
+  border-radius: 4px;
+  border: transparent;
+}
+.footer-btn-icons {
+  position: absolute;
+  top: 55%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.footer-soc-icons {
+  width: 24px;
+  height: 24px;
+  fill: var(--second-header-color);
+}
+.footer-input::placeholder {
+  padding: 15px 295px 15px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 2;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* --------Portfolio-------- */
 .portfolio-header {
   border-bottom: 1px solid #757575;

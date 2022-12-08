@@ -478,6 +478,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-input-group">
+          <h2 class="footer-text">Підпишіться на розсилку</h2>
+          <label for="email"></label>
+          <input
+            type="email"
+            class="footer-input"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <div class="footer-btn">
+            <button type="button" class="footer-button">
+              <div class="footer-btn-icons">
+                <svg class="footer-soc-icons fill">
+                  <use href="./imge/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </div>
+              Підписатися
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -487,6 +508,61 @@
             <use href="./imge/symbol-defs.svg#icon-close-button"></use>
           </svg>
         </button>
+        <p class="modal-backdrop">Залиште свої дані, ми вам передзвонимо</p>
+        <form action="">
+          <div class="modal-input-group">
+            <label for="name">Ім'я</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="name"
+              id="name"
+              required
+            /><svg class="modal-input-icons" widht="12" height="12">
+              <use href="./imge/symbol-defs.svg#icon-name"></use>
+            </svg>
+          </div>
+          <div class="modal-input-group">
+            <label for="tel">Телефон</label>
+            <input
+              type="tel"
+              class="modal-input"
+              name="tel"
+              id="tel"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              required
+            />
+          </div>
+          <div class="modal-input-group">
+            <label for="email">Пошта</label>
+            <input
+              type="email"
+              class="modal-input"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="modal-input-group">
+            <label for="comment">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="modal-text"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+           <div class="modal-input-group">
+            <input
+              type="checkbox"
+              name="politic"
+              id="politic"
+              class="modal-politic-check visually-hidden"/>
+            <label for="politic" class="modal-politic-label">Погоджуюся з розсилкою та приймаю</label>
+           </div>
+          <div class="modal-input-group">
+          <button type="submit" class="btn-model-senden">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
