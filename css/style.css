@@ -773,6 +773,7 @@ span.footer-logo {
   color: var(--pimary-link-color);
 }
 .footer-input-group {
+  display: flex;
   margin-left: 93px;
 }
 
@@ -799,7 +800,7 @@ span.footer-logo {
 
 .footer-button {
   display: flex;
-  /* padding: 28px 10px 68px 10px; */
+  margin-left: 12px;
   width: 200px;
   height: 50px;
 
