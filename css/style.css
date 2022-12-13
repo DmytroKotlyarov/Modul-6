@@ -260,6 +260,8 @@ span.header-logo {
   color: #212121;
 }
 .modal-input {
+  margin-bottom: 10px;
+  margin-top: 4px;
   padding-left: 40px;
 
   width: 448px;
@@ -307,6 +309,7 @@ span.header-logo {
   color: #2196F3; 
 }
 .modal-text {
+  margin-top: 4px;
   padding: 12px 16px;
   width: 448px;
   height: 120px;
@@ -392,7 +395,7 @@ label.modal-politic-label {
   position: absolute;
   display: inline-block;
   left: -126px;
-  top: 50%;
+  top: 38%;
   transform: translateY(-50%);
   transition:
   fill 250ms 
@@ -767,18 +770,18 @@ span.footer-logo {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 1;
+  line-height: 1,1;
   letter-spacing: 0.03em;
 
   color: var(--pimary-link-color);
 }
-.footer-input-group {
+
+.footer-input-text {
   display: flex;
   margin-left: 93px;
 }
 
 .footer-text {
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1,1;
@@ -786,6 +789,14 @@ span.footer-logo {
   text-transform: uppercase;
 
   color: var(--second-header-color);
+}
+
+.footer-input-group {
+  margin-left: 93px;
+}
+
+.footer-form{ 
+  display: flex; 
 }
 
 .footer-input {
@@ -801,13 +812,14 @@ span.footer-logo {
 .footer-button {
   display: flex;
   margin-left: 12px;
-  width: 200px;
+  padding: 10px 62px 10px 28px;
+
   height: 50px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1,8;
-  padding: 10px 62px 10px 28px;
+  align-items: center;
   letter-spacing: 0.06em;
 
   color: var(--pimary-link-color);
@@ -817,8 +829,6 @@ span.footer-logo {
 }
 
 .footer-soc-icons {
-  width: 24px;
-  height: 24px;
   fill: var(--second-header-color);
 }
 
@@ -926,6 +936,7 @@ span.footer-logo {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .fill {
+  margin-left: 10px;
   fill: white;
 }
 .items-pic:hover .portfolio-cover-text {
