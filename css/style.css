@@ -782,7 +782,7 @@ span.footer-logo {
 }
 
 .footer-text {
-  margin-bottom: 20px
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1,1;
@@ -938,7 +938,7 @@ span.footer-logo {
 }
 .fill {
   margin-left: 10px;
-  width: 24px
+  width: 24px;
   fill: white;
 }
 .items-pic:hover .portfolio-cover-text {
